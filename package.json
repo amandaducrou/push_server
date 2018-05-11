@@ -1,0 +1,16 @@
+{
+  "name": "push_server",
+  "version": "1.0.0",
+  "description": "Web Push Server",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pwa",
+    "push-server"
+  ],
+  "author": "Amanda Ducrou <amandaducrou@gmail.com>",
+  "license": "ISC"
+}
