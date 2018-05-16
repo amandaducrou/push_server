@@ -45,7 +45,11 @@ http.createServer((request, response) => {
         // Read body stream
         request.on("data", chunk => body.push(chunk)).on("end", () => {
 
-            response.end("Push Sent");
+            // Send Notification with POST body
+            push.send(body.toString());
+
+            // Respond
+            response.end("Push Sent\n");
         });
 
     // Not Found
